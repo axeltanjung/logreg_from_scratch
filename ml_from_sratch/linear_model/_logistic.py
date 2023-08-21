@@ -78,7 +78,7 @@ class LogisticRegression:
         self.n_samples, self.n_features  = X.shape
 
         # Initialize the parameters
-        self.coef_ = np.zeros(self.n_features)
+        self.coef_ = np.zeros(self.n_features)  
         self.intercept_ = 0
 
         # Tune the parameters
@@ -101,7 +101,7 @@ class LogisticRegression:
 
     def predict_proba(self, X):
         """"
-        Probability estimates.
+        Probability estimates
         Parameters
         ----------
         X : array-like of shape (n_samples, n_features)
