@@ -73,3 +73,43 @@ Logistic Regression adalah model linier sederhana, yang berarti ia tidak memilik
 Meskipun ada variasi dari Logistic Regression yang dapat menangani masalah multikelas (misalnya, Regresi Logistik Multinomial), ia tidak mengatasi masalah multikelas dengan baik sebagaimana algoritma klasifikasi lain yang dirancang khusus untuk tugas tersebut.
 
 Kesimpulannya, Logistic Regression adalah algoritma klasifikasi yang kuat dan mudah diinterpretasi, tetapi ada batasan yang perlu dipertimbangkan terutama ketika kita berurusan dengan data yang sangat kompleks atau memiliki karakteristik khusus tertentu. Pilihan algoritma tergantung pada jenis data yang Anda miliki dan tujuan analisis Anda.
+
+### Component of Learning
+
+Algoritma Logistic Regression adalah salah satu algoritma yang digunakan dalam Machine Learning untuk masalah klasifikasi. Dalam konteks ini, kita dapat mengidentifikasi komponen-komponen pembelajaran (learning components) dari algoritma Logistic Regression sebagai berikut:
+
+1. Dataset (Data Training):
+
+- Data Input (X): Ini adalah kumpulan data yang digunakan untuk melakukan prediksi. Setiap data input biasanya terdiri dari fitur atau atribut yang digunakan sebagai dasar untuk membuat prediksi.
+- Label Output (y): Ini adalah label atau kategori yang ingin diprediksi oleh model. Label ini digunakan untuk melatih model dan mengukur kinerjanya.
+Hipothesis Function:
+
+2. Logistic Function (Sigmoid): Ini adalah fungsi yang digunakan dalam Logistic Regression untuk menghitung probabilitas bahwa suatu contoh data masuk ke dalam satu kelas tertentu. Fungsi sigmoid mengambil input linier dan mengubahnya menjadi nilai antara 0 dan 1.
+
+3. Parameter Model:
+
+- Bobot (Weights): Bobot ini adalah parameter yang akan diubah selama proses pelatihan. Mereka digunakan untuk mengukur kontribusi setiap fitur terhadap hasil prediksi.
+- Bias (Intercept): Bias adalah parameter tambahan yang digunakan dalam perhitungan. Ini memungkinkan model untuk mengambil nilai yang tidak nol ketika semua fitur memiliki nilai nol.
+
+4. Fungsi Cost (Loss Function):
+
+- Cross-Entropy Loss: Fungsi biaya digunakan untuk mengukur sejauh mana prediksi model berbeda dari label sebenarnya dalam dataset pelatihan. Dalam Logistic Regression, cross-entropy loss sering digunakan sebagai fungsi biaya.
+
+5. Metode Optimisasi:
+
+- Gradient Descent: Ini adalah algoritma optimisasi yang digunakan untuk menyesuaikan bobot dan bias model dengan cara yang mengurangi fungsi biaya. Gradient descent mencari nilai minimum dari fungsi biaya dengan menghitung gradien atau turunan parsialnya.
+
+6. Proses Pembelajaran:
+
+- Inisialisasi Parameter: Bobot dan bias awalnya diinisialisasi secara acak atau dengan nilai tertentu.
+- Iterasi: Model melakukan iterasi melalui dataset pelatihan untuk menghitung prediksi, mengukur kesalahan dengan fungsi biaya, dan memperbarui parameter menggunakan metode optimisasi seperti gradient descent.
+- Konvergensi: Proses iterasi berlanjut hingga model konvergen, yaitu saat perubahan dalam parameter model menjadi sangat kecil atau saat fungsi biaya mencapai nilai minimum.
+  
+7. Evaluasi Model:
+
+- Metrik Evaluasi: Model Logistic Regression dapat dievaluasi menggunakan berbagai metrik seperti akurasi, presisi, recall, F1-score, dan area di bawah kurva ROC (AUC-ROC) tergantung pada jenis masalah klasifikasi yang dihadapi.
+- Validasi: Untuk mengukur seberapa baik model berkinerja pada data yang tidak terlihat sebelumnya, umumnya dilakukan validasi silang (cross-validation).
+  
+8. Prediksi:
+
+- Setelah model Logistic Regression dilatih, ia dapat digunakan untuk melakukan prediksi pada data baru dengan menghitung probabilitas kelas target dan mengambil keputusan berdasarkan probabilitas tersebut.
